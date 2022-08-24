@@ -6,9 +6,9 @@ import Navbar from '../Navbar/Navbar'
 
 const Header = () => {
     return (
-        <header className='bg-yellow'>
+        <header className='bg-yellow border-b border-black'>
             <Navbar />
-            <div className='flex justify-between items-center border-b border-black px-5 py-24 max-w-7xl mx-auto'>
+            <div className='flex justify-between items-center px-5 py-24 max-w-7xl mx-auto'>
                 <div className='space-y-6'>
                     <h1 className='text-8xl'>Stay curious.</h1>
                     <h3 className='text-2xl max-w-md'>Discover stories, thinking, and expertise from writers on any topic.</h3>
