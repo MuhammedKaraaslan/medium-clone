@@ -14,11 +14,11 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className='flex items-center space-x-5 text-sm'>
-                    <h3 className='cursor-pointer'>Our story</h3>
-                    <h3 className='cursor-pointer'>Membership</h3>
-                    <h3 className='cursor-pointer'>Write</h3>
-                    <h3 className='cursor-pointer'>Sign In</h3>
-                    <h3 className='cursor-pointer bg-black rounded-full text-white py-2 px-3'>Get started</h3>
+                    <h3 className='hidden md:inline-flex cursor-pointer'>Our story</h3>
+                    <h3 className='hidden md:inline-flex cursor-pointer'>Membership</h3>
+                    <h3 className='hidden md:inline-flex cursor-pointer'>Write</h3>
+                    <h3 className='hidden md:inline-flex cursor-pointer'>Sign In</h3>
+                    <button className='bg-black rounded-full text-white py-2 px-4'>Get started</button>
                 </div>
             </div >
         </div>
