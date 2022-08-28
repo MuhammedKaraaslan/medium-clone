@@ -27,7 +27,10 @@ const Post = ({ post }: Props) => {
         }
 
         {/* Details */}
-          <p className='text-gray-400 text-sm'>{`${post.readTime} read`}</p>
+        <div className='flex text-gray-400 text-sm space-x-3'>
+          <p >{new Date(post._createdAt).toLocaleDateString()}</p>
+          <p >{`${post.readTime} read`}</p>
+        </div>
       </div>
     </ Link>
   )
