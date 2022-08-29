@@ -2,6 +2,7 @@ import type { GetServerSideProps } from 'next'
 import Head from 'next/head'
 
 import { Header, TrendPostsSection } from '../containers/index'
+import Feed from '../containers/Feed/Feed'
 
 import { Post } from '../types/typings'
 import { fetchPosts } from '../utils/fetchPosts'
@@ -21,6 +22,8 @@ const Home = ({ posts }: Props) => {
       <Header />
 
       <TrendPostsSection posts={posts} />
+
+      <Feed posts={posts} />
 
     </div>
   )
