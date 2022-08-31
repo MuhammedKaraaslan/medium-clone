@@ -15,6 +15,7 @@ import { Post } from '../../types/typings'
 import { BsHouse, BsBookmarks, BsBell, BsCardText, BsPencilSquare, BsFacebook, BsTwitter, BsLinkedin, BsSearch, BsEnvelopeOpen, BsHeart, BsChat } from "react-icons/bs"
 
 import { SubmitHandler, useForm } from 'react-hook-form'
+import Footer from '../../containers/Footer/Footer'
 
 interface IFormInput {
     _id: string,
@@ -45,9 +46,9 @@ function Post({ post }: Props) {
     };
 
     return (
-        <main className='mb-32'>
+        <main className='xl:mb-32'>
             {/* left side bar */}
-            <div className='fixed flex flex-col items-end h-screen pt-6 pl-24 pr-6 border-r border-gray-300'>
+            <div className='fixed z-10 flex-col items-end hidden h-screen pt-6 pl-24 pr-6 border-r border-gray-300 xl:flex'>
                 <Link href="/">
                     <img src={InnerPageLogo.src} alt="logo" className='object-cover w-12 h-16 cursor-pointer' />
                 </Link>
@@ -61,7 +62,7 @@ function Post({ post }: Props) {
             </div>
 
             {/* post */}
-            <div className='relative pt-16 mr-64 space-y-8 px-96'>
+            <div className='relative p-5 space-y-8 xl:pt-16 xl:mr-64 xl:px-96'>
                 {/* Author */}
                 <div className='flex items-center w-full space-x-6'>
                     <img src={urlFor(post.author.image).url()} alt={post.author.name} className='object-cover w-12 h-12 rounded-full' />
@@ -186,7 +187,7 @@ function Post({ post }: Props) {
                 </div>
 
                 {/* Comments and Claps */}
-                <div className='fixed flex items-center px-5 py-3 space-x-5 text-gray-400 bg-gray-100 rounded-full right-1/2 bottom-5'>
+                <div className='fixed items-center hidden px-5 py-3 space-x-5 text-gray-400 bg-gray-100 rounded-full xl:flex right-1/2 bottom-5'>
                     <a className='flex items-center space-x-2 transition-all duration-100 ease-out hover:text-black '>
                         <BsHeart className='w-4 h-4' />
                         <p className='text-sm'>1K</p>
@@ -200,7 +201,7 @@ function Post({ post }: Props) {
             </div>
 
             {/* right side bar */}
-            <div className='fixed top-0 right-0 flex flex-col h-screen pt-16 pl-6 pr-32 border-l stop-0 border-x-gray-300'>
+            <div className='fixed top-0 right-0 flex-col hidden h-screen pt-16 pl-6 pr-32 border-l xl:flex stop-0 border-x-gray-300'>
                 <div className='relative'>
                     <div className='space-x-5'>
                         <button className='px-24 py-2 text-sm text-white bg-black rounded-full'>Get Started</button>
@@ -222,6 +223,10 @@ function Post({ post }: Props) {
                         </button>
                     </div>
                 </div>
+            </div>
+
+            <div className='xl:hidden'>
+                <Footer />
             </div>
         </main>
     )
