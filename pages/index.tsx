@@ -17,7 +17,7 @@ const Home = ({ posts }: Props) => {
     <div>
       <Head>
         <title>Medium - Where good ideas find you.</title>
-        <link rel="icon" href="" />
+        <link rel="icon" href="/logo.png" />
       </Head>
 
       <Header />
