@@ -8,7 +8,9 @@ This project has article detail page and comment functionality. (Your comments w
 
 ## Topics
 - NextJS / ReactJS
-- Server Side Rendering
+- TypeScript
+- SSR
+- ISR
 - Sanity CMS
 - Tailwind CSS
 - Deployed on Vercel
