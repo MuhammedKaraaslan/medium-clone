@@ -1,6 +1,6 @@
 ## Medium Clone with NextJS, Sanity CMS and Tailwind CSS
 
-Google clone created with NextJS.
+Medium clone created with NextJS.
 
 ## [Click Here](https://medium-clone-mhmmdkaraaslan.vercel.app/) to view the site
 
