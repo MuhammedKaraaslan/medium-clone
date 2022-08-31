@@ -2,7 +2,7 @@
 
 Medium clone created using NextJS.
 
-This project has article detail page and comment functionality. (Your comments will show up after it has been approved)
+This project has article detail page and comment functionality. (Your comments will show up after admin approve them in Sanity CMS)
 
 ## [Click Here](https://medium-clone-mhmmdkaraaslan.vercel.app/) to view the site
 
