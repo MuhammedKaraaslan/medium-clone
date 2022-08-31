@@ -9,7 +9,7 @@ interface Props {
 const Feed = ({ posts }: Props) => {
     return (
         <div className='grid grid-cols-12 p-5 mx-auto mt-5 max-w-7xl '>
-            <div className='col-span-7'>
+            <div className='col-span-12 lg:col-span-7'>
                 {/* Post */}
                 {posts?.map((post) => (
                     <div key={post._id} className='flex mt-5 space-x-5' >

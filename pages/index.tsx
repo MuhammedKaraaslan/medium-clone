@@ -6,6 +6,7 @@ import Feed from '../containers/Feed/Feed'
 
 import { Post } from '../types/typings'
 import { fetchPosts } from '../utils/fetchPosts'
+import Footer from '../containers/Footer/Footer'
 
 interface Props {
   posts: Post[]
@@ -25,6 +26,7 @@ const Home = ({ posts }: Props) => {
 
       <Feed posts={posts} />
 
+      <Footer />
     </div>
   )
 }

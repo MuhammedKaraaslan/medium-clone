@@ -24,7 +24,7 @@ const Post = ({ post, isTrend }: Props) => {
 
           {/* Descriptiopn */}
           {!isTrend &&
-            <p className='text-gray-400'>{post.description}</p>
+            <p className='hidden text-gray-400 md:inline-flex'>{post.description}</p>
           }
 
           {/* Details */}
@@ -37,7 +37,7 @@ const Post = ({ post, isTrend }: Props) => {
         {
           !isTrend &&
           <div>
-            <img src={urlFor(post.mainImage).url()} alt={post.title} className='object-cover h-32 w-52 max-w-none' />
+            <img src={urlFor(post.mainImage).url()} alt={post.title} className='object-cover w-32 h-32 md:h-32 md:w-52 max-w-none' />
           </div>
         }
       </div>

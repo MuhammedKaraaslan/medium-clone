@@ -6,7 +6,7 @@ import { HeaderLogo } from '../../assets'
 
 const Navbar = () => {
     return (
-        <div className='border-b border-black'>
+        <div className='fixed top-0 left-0 w-full border-b border-black bg-yellow'>
             <div className='flex justify-between p-5 mx-auto max-w-7xl'>
                 <div className='flex items-center space-x-5'>
                     <Link href='/'>
