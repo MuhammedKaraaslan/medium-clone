@@ -1,6 +1,7 @@
 ## Medium Clone with NextJS, Sanity CMS and Tailwind CSS
 
 Medium clone created using NextJS.
+
 This project has article detail page and comment functionality. (Your comments will show up after it has been approved)
 
 ## [Click Here](https://medium-clone-mhmmdkaraaslan.vercel.app/) to view the site
